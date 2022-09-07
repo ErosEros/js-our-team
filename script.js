@@ -66,5 +66,20 @@ const team = [
 
 ]
 
+// stampo su console le informazioni relative al team
 console.log(team)
 
+// stampo le informazioni su html e console
+for(let i = 0; i < team.length; i++ ) {
+    
+    const membri = team[i];
+    console.log(membri.nome);
+    console.log(membri.ruolo);
+    console.log(membri.immagine);
+  
+    const teamHtml = document.getElementById('Team-member')
+   
+    teamHtml.innerHTML += '<div>' + membri.nome + '</div>'
+    teamHtml.innerHTML += '<div>' + membri.ruolo + '</div>'
+    teamHtml.innerHTML += '<div>' + membri.immagine + '</div>'
+}  
