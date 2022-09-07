@@ -81,5 +81,6 @@ for(let i = 0; i < team.length; i++ ) {
    
     teamHtml.innerHTML += '<div>' + membri.nome + '</div>'
     teamHtml.innerHTML += '<div>' + membri.ruolo + '</div>'
-    teamHtml.innerHTML += '<div>' + membri.immagine + '</div>'
+    teamHtml.innerHTML +=  ` <img src="${membri.immagine}"> `
+
 }  
